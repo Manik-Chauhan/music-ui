@@ -3,7 +3,7 @@ import React from 'react';
 function Songs({ song }) {
   return (
     <div className="justify-center">
-    <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden mt-8">
+    <div className="bg-gray-800 rounded-lg shadow-lg overflow-hidden mt-8 lg:w-3/5 lg:ml-60">
       <img src={song.img} alt="song_img" className="w-full h-48 object-cover" />
       <div className="p-4">
         <h2 className="text-xl font-bold mb-2 text-white">{song.name}</h2>

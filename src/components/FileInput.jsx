@@ -60,7 +60,7 @@ function FileInput({ name, label, value, type, handleInputState, ...rest }) {
         />
       )}
       {value !== null && !progressShow && typeof value !== "string" && (
-        <button className="btn btn-info" onClick={handleUpload}>Upload</button>
+        <button className="btn btn-info mt-2" onClick={handleUpload}>Upload</button>
       )}
       {progressShow && progress < 100 && (
         <div>

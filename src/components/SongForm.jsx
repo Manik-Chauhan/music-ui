@@ -58,23 +58,29 @@ function SongForm() {
       onChange={handleChange}
       value={data.artist}
     />
+    <label className="label">
+    <span className="label-text">Pick an Image</span>
+  </label>
     <FileInput
       name="img"
       label="Choose Image"
       handleInputState={handleInputState}
       type="image"
       value={data.img}
-      className="mb-4"
+      className=" file-input file-input-bordered w-full max-w-xs mb-4"
     />
+    <label className="label">
+    <span className="label-text">Pick a Song</span>
+  </label>
     <FileInput
       name="song"
       label="Choose Song"
       handleInputState={handleInputState}
       type="audio"
-      className="mb-4"
+      className="file-input file-input-bordered w-full max-w-xs mb-4"
       value={data.song}
     />
-    <button type="submit" className="btn w-full">
+    <button type="submit" className="btn w-full mt-4">
       Submit
     </button>
     {isSubmitted && (

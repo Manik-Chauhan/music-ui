@@ -32,7 +32,8 @@ function App() {
           <Carousel/>
           <SongForm />
       {isLoading ? (
-        <div className="loading-screen">Loading...</div>
+          <span className="loading loading-infinity loading-lg"></span>
+        //  <div className="loading-screen">Loading...</div>
       ) : (
         <>
           <div>
